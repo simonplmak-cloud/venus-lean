@@ -594,52 +594,6 @@
             font-size: 0.9rem;
         }
 
-        /* Gallery Section */
-        .gallery {
-            background: var(--cream);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            aspect-ratio: 4/3;
-            cursor: pointer;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 20px;
-            background: linear-gradient(to top, rgba(74, 18, 89, 0.9), transparent);
-            color: var(--white);
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
         /* Contact Section */
         .contact {
             background: linear-gradient(135deg, var(--purple-main) 0%, var(--purple-deep) 100%);
@@ -857,7 +811,6 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#languages">Languages</a></li>
-                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" onclick="toggleMenu()">
@@ -1064,38 +1017,6 @@
                     <span class="flag">🇬🇧</span>
                     <h3>英語</h3>
                     <p>English</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="section-container">
-            <h2 class="section-title">Gallery</h2>
-            <p class="section-subtitle">活動照片</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/WhatsApp Image 2026-02-24 at 20.18.17.jpeg" alt="ABIA Business Forum">
-                    <div class="gallery-overlay">
-                        <h3>ABIA 論壇活動</h3>
-                        <p>Business Innovation Forum</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/WhatsApp Image 2026-02-25 at 01.36.58.jpeg" alt="Business Dinner">
-                    <div class="gallery-overlay">
-                        <h3>商務交流</h3>
-                        <p>Business Networking Dinner</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/Venus Lean.jpg" alt="Venus Lean Portrait">
-                    <div class="gallery-overlay">
-                        <h3>專業形象</h3>
-                        <p>Professional Portrait</p>
-                    </div>
                 </div>
             </div>
         </div>
