@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Venus Lean | 練瑞雲 — Global Business Strategist · legendv.me</title>
+
+    <!-- ─── Primary SEO ─── -->
+    <title>Venus Lean | Global Business Strategist & Founder of ABIA · legendv.me</title>
+    <meta name="description" content="Venus Lean (練瑞雲) is a Global Business Expansion Strategist with 25+ years of cross-border experience across Asia, Europe and the Middle East. Founder of ABIA — Asia-Pacific Business Innovation Association.">
+    <meta name="keywords" content="Venus Lean, 練瑞雲, Global Business Strategist, ABIA, Asia Pacific Business Innovation, Cross-border Strategy, Go-global Consultant, legendv.me, Legend V, International Business, China Expansion">
+    <meta name="author" content="Venus Lean">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://legendv.me/">
+
+    <!-- ─── Open Graph / Facebook ─── -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Venus Lean | Global Business Strategist & Founder of ABIA">
+    <meta property="og:description" content="25+ years of cross-border market strategy across Asia, Europe & the Middle East. Founder of ABIA — Asia-Pacific Business Innovation Association.">
+    <meta property="og:url" content="https://legendv.me/">
+    <meta property="og:image" content="https://legendv.me/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:site_name" content="Venus Lean · legendv.me">
+    <meta property="profile:first_name" content="Venus">
+    <meta property="profile:last_name" content="Lean">
+
+    <!-- ─── Twitter Card ─── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Venus Lean | Global Business Strategist & Founder of ABIA">
+    <meta name="twitter:description" content="25+ years of cross-border market strategy. Founder of ABIA — Asia-Pacific Business Innovation Association.">
+    <meta name="twitter:image" content="https://legendv.me/images/og-image.jpg">
+
+    <!-- ─── Favicon ─── -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#7b3f52">
+
+    <!-- ─── Alternate Language ─── -->
+    <link rel="alternate" hreflang="en" href="https://legendv.me/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://legendv.me/zh.html">
+    <link rel="alternate" hreflang="x-default" href="https://legendv.me/">
+
+    <!-- ─── JSON-LD Structured Data ─── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Venus Lean",
+      "alternateName": "練瑞雲",
+      "url": "https://legendv.me/",
+      "image": "https://legendv.me/images/venus-lean-profile.jpg",
+      "jobTitle": "Global Business Expansion Strategist",
+      "description": "Global Business Expansion Strategist with 25+ years of cross-border experience across Asia, Europe and the Middle East. Founder and Secretary-General of ABIA.",
+      "sameAs": [
+        "https://cn.linkedin.com/in/venus-lean-88360416",
+        "https://www.instagram.com/abia.network/",
+        "https://www.facebook.com/profile.php?id=61582437116644"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Asia-Pacific Business Innovation Association (ABIA)",
+        "url": "https://www.instagram.com/abia.network/"
+      },
+      "knowsLanguage": ["en", "zh", "yue"]
+    }
+    </script>
+
+    <!-- ─── Fonts ─── -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Great+Vibes&family=Noto+Serif+TC:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
         /* ─── Design Tokens ─── */
         :root {
@@ -25,6 +91,7 @@
             --gold-light:   #d4af6e;
             --gold-pale:    #f0e0c0;
             --mauve:        #6b4c5e;
+            --purple:       #7B2D8B;
             --text-dark:    #3a2a30;
             --text-mid:     #6b5560;
             --text-light:   #9a8090;
@@ -37,16 +104,49 @@
         html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Lato', 'Noto Serif TC', sans-serif;
+            font-family: 'Lato', sans-serif;
             background: var(--cream);
             color: var(--text-dark);
             line-height: 1.8;
             overflow-x: hidden;
         }
 
-        /* ─── Utility ─── */
         .script { font-family: 'Great Vibes', cursive; }
-        .serif  { font-family: 'Cormorant Garamond', 'Noto Serif TC', serif; }
+        .serif  { font-family: 'Cormorant Garamond', serif; }
+
+        /* ─── Language Switcher ─── */
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .lang-switch a {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 5px 12px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .lang-switch a.active {
+            background: var(--rose-main);
+            color: var(--white);
+        }
+        .lang-switch a:not(.active) {
+            color: var(--text-mid);
+            border: 1px solid var(--blush);
+        }
+        .lang-switch a:not(.active):hover {
+            background: var(--blush);
+            color: var(--rose-deep);
+        }
+        .lang-divider {
+            width: 1px; height: 14px;
+            background: var(--blush);
+        }
 
         /* ─── Navigation ─── */
         nav {
@@ -56,7 +156,6 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             z-index: 1000;
-            padding: 0;
             border-bottom: 1px solid var(--blush);
             box-shadow: 0 2px 24px var(--shadow-rose);
             transition: all 0.3s ease;
@@ -68,7 +167,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 16px 32px;
+            padding: 14px 32px;
         }
 
         .logo {
@@ -81,16 +180,22 @@
         }
         .logo:hover { color: var(--gold); }
 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
         .nav-links {
             display: flex;
-            gap: 36px;
+            gap: 32px;
             list-style: none;
         }
 
         .nav-links a {
             font-family: 'Lato', sans-serif;
             font-weight: 400;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             letter-spacing: 0.12em;
             text-transform: uppercase;
             color: var(--text-mid);
@@ -98,7 +203,6 @@
             position: relative;
             transition: color 0.3s;
         }
-
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -107,7 +211,6 @@
             background: var(--gold);
             transition: width 0.35s ease;
         }
-
         .nav-links a:hover { color: var(--rose-main); }
         .nav-links a:hover::after { width: 100%; }
 
@@ -124,8 +227,8 @@
             width: 24px; height: 2px;
             background: var(--rose-main);
             border-radius: 2px;
-            transition: all 0.3s;
             display: block;
+            transition: all 0.3s;
         }
 
         /* ─── Hero ─── */
@@ -164,14 +267,13 @@
             max-width: 1100px;
             width: 100%;
             display: grid;
-            grid-template-columns: 420px 1fr;
+            grid-template-columns: 400px 1fr;
             gap: 70px;
             align-items: center;
             position: relative;
             z-index: 2;
         }
 
-        /* Profile photo with ornate frame */
         .hero-photo-wrap {
             position: relative;
             display: flex;
@@ -181,8 +283,8 @@
 
         .hero-photo-frame {
             position: relative;
-            width: 340px;
-            height: 420px;
+            width: 320px;
+            height: 400px;
         }
 
         .hero-photo-frame .frame-img {
@@ -207,23 +309,6 @@
             box-shadow: 0 20px 60px var(--shadow-rose), 0 8px 24px var(--shadow-gold);
         }
 
-        /* Floating petal accents */
-        .petal {
-            position: absolute;
-            width: 80px;
-            opacity: 0.55;
-            animation: float-petal 6s ease-in-out infinite;
-            pointer-events: none;
-        }
-        .petal-1 { top: -30px; right: -20px; animation-delay: 0s; }
-        .petal-2 { bottom: -20px; left: -30px; animation-delay: -3s; width: 60px; }
-
-        @keyframes float-petal {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50%       { transform: translateY(-14px) rotate(8deg); }
-        }
-
-        /* Hero text */
         .hero-text { color: var(--text-dark); }
 
         .hero-eyebrow {
@@ -232,11 +317,10 @@
             color: var(--rose-soft);
             display: block;
             margin-bottom: 6px;
-            letter-spacing: 0.04em;
         }
 
         .hero-text h1 {
-            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(2.8rem, 5vw, 4.2rem);
             font-weight: 600;
             line-height: 1.15;
@@ -244,18 +328,9 @@
             margin-bottom: 4px;
         }
 
-        .hero-text h1 .chinese {
-            display: block;
-            font-size: 0.55em;
-            font-weight: 300;
-            color: var(--mauve);
-            letter-spacing: 0.2em;
-            margin-top: 6px;
-        }
-
         .hero-title {
             font-family: 'Lato', sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 700;
             letter-spacing: 0.16em;
             text-transform: uppercase;
@@ -264,15 +339,14 @@
         }
 
         .hero-divider {
-            width: 60px;
-            height: 1px;
+            width: 60px; height: 1px;
             background: linear-gradient(90deg, var(--gold), transparent);
             margin-bottom: 22px;
         }
 
         .hero-tagline {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.15rem;
+            font-size: 1.12rem;
             font-style: italic;
             color: var(--text-mid);
             line-height: 1.9;
@@ -296,30 +370,21 @@
             text-transform: uppercase;
             transition: all 0.35s ease;
             display: inline-block;
-            cursor: pointer;
             border: none;
+            cursor: pointer;
         }
-
         .btn-primary {
             background: linear-gradient(135deg, var(--rose-main), var(--rose-deep));
             color: var(--white);
             box-shadow: 0 8px 28px var(--shadow-rose);
         }
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 14px 36px var(--shadow-rose);
-        }
-
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 36px var(--shadow-rose); }
         .btn-outline {
             background: transparent;
             color: var(--rose-main);
             border: 1.5px solid var(--rose-soft);
         }
-        .btn-outline:hover {
-            background: var(--blush);
-            border-color: var(--rose-main);
-            transform: translateY(-3px);
-        }
+        .btn-outline:hover { background: var(--blush); border-color: var(--rose-main); transform: translateY(-3px); }
 
         /* ─── Floral Divider ─── */
         .floral-divider {
@@ -333,7 +398,6 @@
 
         /* ─── Section Base ─── */
         section { padding: 100px 32px; }
-
         .section-container { max-width: 1100px; margin: 0 auto; }
 
         .section-label {
@@ -346,7 +410,7 @@
         }
 
         .section-title {
-            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: clamp(2rem, 3.5vw, 2.8rem);
             font-weight: 600;
             text-align: center;
@@ -355,8 +419,7 @@
         }
 
         .section-rule {
-            width: 50px;
-            height: 1px;
+            width: 50px; height: 1px;
             background: linear-gradient(90deg, transparent, var(--gold), transparent);
             margin: 0 auto 16px;
         }
@@ -373,54 +436,16 @@
         /* ─── About ─── */
         .about { background: var(--ivory); }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 36px;
-            margin-bottom: 60px;
-        }
-
-        .about-card {
-            padding: 44px 40px;
-            border-radius: 4px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 3px; height: 100%;
-            background: linear-gradient(to bottom, var(--gold), var(--rose-soft));
-        }
-
-        .about-card-zh {
-            background: linear-gradient(135deg, var(--blush-light) 0%, var(--cream) 100%);
-            border: 1px solid var(--blush);
-        }
-
-        .about-card-en {
-            background: linear-gradient(135deg, var(--cream) 0%, var(--gold-pale) 100%);
-            border: 1px solid var(--gold-pale);
-        }
-
-        .about-card h3 {
-            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--rose-deep);
-            margin-bottom: 18px;
-            letter-spacing: 0.06em;
-        }
-
-        .about-card p {
+        .about-text {
+            max-width: 820px;
+            margin: 0 auto 60px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.18rem;
+            line-height: 2.1;
             color: var(--text-mid);
-            font-size: 0.97rem;
-            line-height: 2;
+            text-align: center;
         }
 
-        /* Stats row */
         .stats-row {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -437,7 +462,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .stat-item::after {
             content: '';
             position: absolute;
@@ -447,7 +471,6 @@
             transform: scaleX(0);
             transition: transform 0.35s ease;
         }
-
         .stat-item:hover { box-shadow: 0 12px 40px var(--shadow-rose); transform: translateY(-4px); }
         .stat-item:hover::after { transform: scaleX(1); }
 
@@ -459,7 +482,6 @@
             display: block;
             line-height: 1.1;
         }
-
         .stat-label {
             font-size: 0.78rem;
             letter-spacing: 0.12em;
@@ -469,13 +491,12 @@
             display: block;
         }
 
-        /* ─── Quote / Highlight ─── */
+        /* ─── Quote ─── */
         .quote-section {
             padding: 90px 32px;
             position: relative;
             overflow: hidden;
         }
-
         .quote-bg {
             position: absolute;
             inset: 0;
@@ -484,7 +505,6 @@
             background-position: center;
             opacity: 0.55;
         }
-
         .quote-overlay {
             position: absolute;
             inset: 0;
@@ -492,7 +512,6 @@
                 rgba(123,63,82,0.82) 0%,
                 rgba(107,76,94,0.78) 100%);
         }
-
         .quote-content {
             position: relative;
             z-index: 2;
@@ -500,7 +519,6 @@
             margin: 0 auto;
             text-align: center;
         }
-
         .quote-mark {
             font-family: 'Great Vibes', cursive;
             font-size: 6rem;
@@ -510,7 +528,6 @@
             margin-bottom: 24px;
             opacity: 0.7;
         }
-
         .quote-text {
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(1.3rem, 2.5vw, 1.85rem);
@@ -520,7 +537,6 @@
             line-height: 1.75;
             margin-bottom: 28px;
         }
-
         .quote-author {
             font-family: 'Lato', sans-serif;
             font-size: 0.8rem;
@@ -537,7 +553,6 @@
             max-width: 820px;
             margin: 0 auto;
         }
-
         .timeline::before {
             content: '';
             position: absolute;
@@ -547,7 +562,6 @@
             height: 100%;
             background: linear-gradient(to bottom, var(--blush), var(--gold-light), var(--blush));
         }
-
         .timeline-item {
             display: flex;
             justify-content: flex-end;
@@ -555,13 +569,11 @@
             position: relative;
             margin-bottom: 48px;
         }
-
         .timeline-item:nth-child(even) {
             justify-content: flex-start;
             padding-right: 0;
             padding-left: calc(50% + 36px);
         }
-
         .timeline-dot {
             position: absolute;
             left: 50%;
@@ -574,7 +586,6 @@
             box-shadow: 0 0 0 2px var(--gold-light);
             z-index: 2;
         }
-
         .timeline-content {
             background: var(--white);
             padding: 28px 32px;
@@ -585,12 +596,7 @@
             transition: all 0.35s ease;
             position: relative;
         }
-
-        .timeline-content:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 16px 48px var(--shadow-rose);
-        }
-
+        .timeline-content:hover { transform: translateY(-5px); box-shadow: 0 16px 48px var(--shadow-rose); }
         .timeline-content::before {
             content: '';
             position: absolute;
@@ -598,7 +604,6 @@
             height: 2px;
             background: linear-gradient(90deg, var(--gold-light), var(--rose-soft));
         }
-
         .timeline-year {
             font-family: 'Lato', sans-serif;
             font-size: 0.75rem;
@@ -609,28 +614,32 @@
             margin-bottom: 8px;
             display: block;
         }
-
         .timeline-title {
-            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--rose-deep);
             margin-bottom: 4px;
             line-height: 1.4;
         }
-
         .timeline-company {
             font-size: 0.85rem;
             color: var(--rose-soft);
             font-style: italic;
             margin-bottom: 14px;
         }
-
         .timeline-desc {
             font-size: 0.9rem;
             color: var(--text-mid);
             line-height: 1.85;
         }
+        .timeline-link {
+            color: var(--gold);
+            font-size: 0.82rem;
+            letter-spacing: 0.06em;
+            text-decoration: none;
+        }
+        .timeline-link:hover { color: var(--rose-main); }
 
         /* ─── Expertise ─── */
         .expertise { background: var(--ivory); }
@@ -640,7 +649,6 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 28px;
         }
-
         .expertise-card {
             background: var(--white);
             padding: 40px 28px 36px;
@@ -651,7 +659,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .expertise-card::after {
             content: '';
             position: absolute;
@@ -660,12 +667,7 @@
             opacity: 0;
             transition: opacity 0.4s;
         }
-
-        .expertise-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 56px var(--shadow-rose);
-            border-color: var(--rose-soft);
-        }
+        .expertise-card:hover { transform: translateY(-8px); box-shadow: 0 20px 56px var(--shadow-rose); border-color: var(--rose-soft); }
         .expertise-card:hover::after { opacity: 1; }
 
         .expertise-icon-wrap {
@@ -679,7 +681,6 @@
             position: relative;
             z-index: 1;
         }
-
         .expertise-icon-wrap svg {
             width: 28px; height: 28px;
             stroke: var(--rose-main);
@@ -688,9 +689,8 @@
             stroke-linecap: round;
             stroke-linejoin: round;
         }
-
         .expertise-card h3 {
-            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.15rem;
             font-weight: 600;
             color: var(--rose-deep);
@@ -698,7 +698,6 @@
             position: relative;
             z-index: 1;
         }
-
         .expertise-card p {
             font-size: 0.85rem;
             color: var(--text-light);
@@ -708,10 +707,7 @@
         }
 
         /* ─── Languages ─── */
-        .languages {
-            background: var(--cream);
-            padding: 80px 32px;
-        }
+        .languages { background: var(--cream); padding: 80px 32px; }
 
         .language-cards {
             display: flex;
@@ -719,7 +715,6 @@
             gap: 28px;
             flex-wrap: wrap;
         }
-
         .language-card {
             background: var(--white);
             border: 1px solid var(--blush);
@@ -729,27 +724,15 @@
             transition: all 0.35s ease;
             min-width: 180px;
         }
-
-        .language-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 48px var(--shadow-rose);
-            border-color: var(--rose-soft);
-        }
-
-        .lang-flag {
-            font-size: 2.6rem;
-            display: block;
-            margin-bottom: 12px;
-        }
-
+        .language-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px var(--shadow-rose); border-color: var(--rose-soft); }
+        .lang-flag { font-size: 2.6rem; display: block; margin-bottom: 12px; }
         .language-card h3 {
-            font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--rose-deep);
             margin-bottom: 4px;
         }
-
         .language-card p {
             font-size: 0.8rem;
             letter-spacing: 0.1em;
@@ -758,16 +741,9 @@
         }
 
         /* ─── Contact ─── */
-        .contact {
-            background: var(--ivory);
-            padding: 100px 32px;
-        }
+        .contact { background: var(--ivory); padding: 100px 32px; }
 
-        .contact-inner {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
+        .contact-inner { max-width: 700px; margin: 0 auto; text-align: center; }
 
         .contact-intro {
             font-family: 'Cormorant Garamond', serif;
@@ -781,7 +757,7 @@
         .contact-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 16px;
             flex-wrap: wrap;
             margin-bottom: 40px;
         }
@@ -790,17 +766,15 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            padding: 16px 30px;
+            padding: 14px 26px;
             background: var(--white);
             border: 1px solid var(--blush);
             border-radius: 50px;
             text-decoration: none;
             color: var(--text-mid);
             font-size: 0.88rem;
-            font-weight: 400;
             transition: all 0.35s ease;
         }
-
         .contact-link:hover {
             background: var(--blush-light);
             border-color: var(--rose-soft);
@@ -808,7 +782,6 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 32px var(--shadow-rose);
         }
-
         .contact-link .cl-icon {
             width: 36px; height: 36px;
             border-radius: 50%;
@@ -816,8 +789,8 @@
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+            font-size: 1.1rem;
         }
-
         .cl-icon svg {
             width: 18px; height: 18px;
             fill: none;
@@ -825,15 +798,56 @@
             stroke-linecap: round;
             stroke-linejoin: round;
         }
-
-        .cl-email   .cl-icon { background: var(--blush); }
-        .cl-email   .cl-icon svg { stroke: var(--rose-main); }
+        .cl-email    .cl-icon { background: var(--blush); }
+        .cl-email    .cl-icon svg { stroke: var(--rose-main); }
         .cl-linkedin .cl-icon { background: #e8f0fe; }
         .cl-linkedin .cl-icon svg { stroke: #2563eb; }
         .cl-instagram .cl-icon { background: #fce7f3; }
         .cl-instagram .cl-icon svg { stroke: #be185d; }
-        .cl-wechat  .cl-icon { background: #dcfce7; }
-        .cl-wechat  .cl-icon svg { stroke: #16a34a; }
+        .cl-facebook .cl-icon { background: #eff6ff; }
+        .cl-facebook .cl-icon svg { stroke: #1d4ed8; }
+        .cl-wechat   .cl-icon { background: #dcfce7; }
+        .cl-wechat   .cl-icon svg { stroke: #16a34a; }
+
+        /* WeChat ID display */
+        .wechat-id-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #dcfce7, #f0fdf4);
+            border: 1px solid #86efac;
+            border-radius: 50px;
+            padding: 12px 24px;
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #15803d;
+        }
+        .wechat-id-box .wechat-label {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            color: #16a34a;
+        }
+        .wechat-id-box .wechat-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #15803d;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-note {
+            font-size: 0.88rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: 32px;
+        }
+        .contact-note a {
+            color: var(--rose-soft);
+            text-decoration: none;
+        }
+        .contact-note a:hover { color: var(--rose-main); }
 
         /* ─── Footer ─── */
         footer {
@@ -842,7 +856,6 @@
             padding: 40px 32px;
             text-align: center;
         }
-
         .footer-logo {
             font-family: 'Great Vibes', cursive;
             font-size: 2.2rem;
@@ -850,7 +863,6 @@
             display: block;
             margin-bottom: 12px;
         }
-
         .footer-links {
             display: flex;
             justify-content: center;
@@ -859,7 +871,6 @@
             list-style: none;
             margin-bottom: 20px;
         }
-
         .footer-links a {
             color: rgba(255,255,255,0.65);
             text-decoration: none;
@@ -869,11 +880,7 @@
             transition: color 0.3s;
         }
         .footer-links a:hover { color: var(--gold-light); }
-
-        footer p {
-            font-size: 0.8rem;
-            opacity: 0.55;
-        }
+        footer p { font-size: 0.8rem; opacity: 0.55; }
 
         /* ─── Scroll Reveal ─── */
         .reveal {
@@ -881,22 +888,14 @@
             transform: translateY(28px);
             transition: opacity 0.7s ease, transform 0.7s ease;
         }
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
         /* ─── Responsive ─── */
         @media (max-width: 1024px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 48px;
-            }
+            .hero-content { grid-template-columns: 1fr; text-align: center; gap: 48px; }
             .hero-photo-wrap { justify-content: center; }
             .hero-divider { margin: 0 auto 22px; }
             .hero-buttons { justify-content: center; }
-            .about-grid { grid-template-columns: 1fr; }
             .stats-row { grid-template-columns: repeat(2, 1fr); }
             .expertise-grid { grid-template-columns: repeat(2, 1fr); }
         }
@@ -915,6 +914,7 @@
             }
             .nav-links.open { display: flex; }
             .hamburger { display: flex; }
+            .lang-switch { display: none; }
 
             section { padding: 70px 20px; }
             .hero { padding: 100px 20px 60px; }
@@ -949,13 +949,20 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">Venus Lean</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="lang-switch">
+                    <a href="index.html" class="active" hreflang="en">EN</a>
+                    <div class="lang-divider"></div>
+                    <a href="zh.html" hreflang="zh">中文</a>
+                </div>
+            </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
             </button>
@@ -968,30 +975,27 @@
         <div class="hero-overlay" aria-hidden="true"></div>
 
         <div class="hero-content">
-            <!-- Photo -->
             <div class="hero-photo-wrap">
                 <div class="hero-photo-frame">
                     <img class="profile-img"
                          src="images/venus-lean-profile.jpg"
-                         alt="Venus Lean 練瑞雲 — Global Business Strategist">
+                         alt="Venus Lean — Global Business Strategist"
+                         loading="eager">
                     <img class="frame-img"
                          src="images/profile-frame.png"
-                         alt="" aria-hidden="true">
+                         alt="" aria-hidden="true"
+                         loading="eager">
                 </div>
             </div>
 
-            <!-- Text -->
             <div class="hero-text">
                 <span class="hero-eyebrow">A Story Worth Telling</span>
-                <h1>
-                    Venus Lean
-                    <span class="chinese">練 瑞 雲</span>
-                </h1>
+                <h1>Venus Lean</h1>
                 <p class="hero-title">Global Business Expansion Strategist &nbsp;·&nbsp; Founder of ABIA</p>
                 <div class="hero-divider"></div>
                 <p class="hero-tagline">
-                    擁有超過25年跨國市場戰略與高層資源運營經驗<br>
-                    A journey of vision, purpose, and enduring impact — across Asia, Europe &amp; the Middle East
+                    A journey of vision, purpose, and enduring impact —<br>
+                    across Asia, Europe &amp; the Middle East
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
@@ -1002,31 +1006,22 @@
     </section>
 
     <!-- Floral Divider -->
-    <div style="background:var(--ivory); padding: 0; line-height:0; overflow:hidden;">
-        <img src="images/floral-divider.png" alt="" aria-hidden="true" class="floral-divider">
+    <div style="background:var(--ivory); padding:0; line-height:0; overflow:hidden;">
+        <img src="images/floral-divider.png" alt="" aria-hidden="true" class="floral-divider" loading="lazy">
     </div>
 
     <!-- About -->
     <section class="about" id="about">
         <div class="section-container">
             <span class="section-label">My Story</span>
-            <h2 class="section-title">About Me &nbsp;·&nbsp; 關於我</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="section-rule"></div>
             <p class="section-subtitle">Some stories leave a mark — this is one of them</p>
 
-            <div class="about-grid reveal">
-                <div class="about-card about-card-zh">
-                    <h3>關於我</h3>
-                    <p>
-                        擁有超過25年跨國市場戰略、商業機遇整合及高層資源運營經驗，專長於行業跨界合作、國際項目規劃、品牌全球化以及政府與機構之間的戰略對接。近年專注於為中國企業提供全鏈路「出海」顧問服務，涵蓋市場研究、品牌定位、跨境合作、國際公關及合規管理，協助多個文化、旅遊、科技與製造業品牌成功進入韓國、歐洲及中東市場。她的每一步，都在書寫屬於自己的傳奇。
-                    </p>
-                </div>
-                <div class="about-card about-card-en">
-                    <h3>About Me</h3>
-                    <p>
-                        With over 25 years of experience in cross-border market strategy, business opportunity integration, and high-level resource orchestration, I specialise in cross-industry collaboration, international project planning, brand globalisation, and strategic engagement between governments and institutions. In recent years I have focused on providing full-spectrum "go-global" consultancy for Chinese enterprises — helping cultural, tourism, technology, and manufacturing brands successfully enter Korea, Europe, and the Middle East. Every chapter of this journey has been shaped by a quiet conviction: that meaningful work, done with integrity, becomes its own legend.
-                    </p>
-                </div>
+            <div class="about-text reveal">
+                <p>With over 25 years of experience in cross-border market strategy, business opportunity integration, and high-level resource orchestration, Venus specialises in cross-industry collaboration, international project planning, brand globalisation, and strategic engagement between governments and institutions.</p>
+                <br>
+                <p>In recent years she has focused on providing full-spectrum "go-global" consultancy for enterprises — helping cultural, tourism, technology, and manufacturing brands successfully enter Korea, Europe, and the Middle East. Every chapter of this journey has been shaped by a quiet conviction: that meaningful work, done with integrity, becomes its own legend.</p>
             </div>
 
             <div class="stats-row reveal">
@@ -1061,7 +1056,7 @@
                 they are woven from trust, vision, and the quiet courage<br>
                 to leave something worth remembering.
             </p>
-            <span class="quote-author">— Venus Lean &nbsp;·&nbsp; 練瑞雲</span>
+            <span class="quote-author">— Venus Lean</span>
         </div>
     </div>
 
@@ -1069,7 +1064,7 @@
     <section class="experience" id="experience">
         <div class="section-container">
             <span class="section-label">Career Journey</span>
-            <h2 class="section-title">Experience &nbsp;·&nbsp; 職業經歷</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="section-rule"></div>
             <p class="section-subtitle">A path shaped by purpose — and the belief that every great story begins with a single bold step</p>
 
@@ -1079,11 +1074,11 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content reveal">
                         <span class="timeline-year">2025 — Present</span>
-                        <h3 class="timeline-title">創始人 &amp; 秘書長</h3>
-                        <p class="timeline-company">Founder &amp; Secretary-General · ABIA</p>
+                        <h3 class="timeline-title">Founder &amp; Secretary-General</h3>
+                        <p class="timeline-company">Asia-Pacific Business Innovation Association (ABIA)</p>
                         <p class="timeline-desc">
-                            發起並策劃年度APEC數字貿易與商業創新論壇，成為連接亞太地區數字貿易、文化交流與創新合作的重要平台。<br>
-                            <a href="https://www.instagram.com/abia.network/" target="_blank" rel="noopener" style="color:var(--gold);font-size:0.82rem;letter-spacing:0.06em;">@abia.network on Instagram ↗</a>
+                            Founded and leads the annual APEC Digital Trade &amp; Business Innovation Forum, connecting Asia-Pacific digital trade, cultural exchange, and innovation collaboration.<br>
+                            <a href="https://www.instagram.com/abia.network/" target="_blank" rel="noopener" class="timeline-link">@abia.network on Instagram ↗</a>
                         </p>
                     </div>
                 </div>
@@ -1092,10 +1087,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content reveal">
                         <span class="timeline-year">2024 — Present</span>
-                        <h3 class="timeline-title">出海專業顧問</h3>
-                        <p class="timeline-company">Global Expansion Consultant</p>
+                        <h3 class="timeline-title">Global Expansion Consultant</h3>
+                        <p class="timeline-company">Independent Advisory</p>
                         <p class="timeline-desc">
-                            為客戶提供海外市場拓展全案服務，包括市場研究、品牌定位、跨境合作與合規指導。成功協助多家文化、旅遊、科技與製造企業進入韓國、歐洲及中東市場。
+                            Provides end-to-end overseas market expansion services including market research, brand positioning, cross-border partnerships, and compliance guidance. Successfully assisted cultural, tourism, technology, and manufacturing enterprises in entering Korea, Europe, and the Middle East.
                         </p>
                     </div>
                 </div>
@@ -1104,10 +1099,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content reveal">
                         <span class="timeline-year">2014 — 2023</span>
-                        <h3 class="timeline-title">創辦人</h3>
-                        <p class="timeline-company">Founder · 虹本朗喬企業策劃 &amp; Legend V Global Communications</p>
+                        <h3 class="timeline-title">Founder</h3>
+                        <p class="timeline-company">Legend V Global Communications &amp; 虹本朗喬企業策劃</p>
                         <p class="timeline-desc">
-                            提供文化旅遊與健康產業的戰略顧問與管理服務。自2019年起涉足元宇宙與新興科技產業的商業規劃與落地。
+                            Provided strategic advisory and management services for cultural tourism and wellness industries. From 2019, expanded into metaverse and emerging technology business planning and implementation.
                         </p>
                     </div>
                 </div>
@@ -1116,10 +1111,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content reveal">
                         <span class="timeline-year">2003 — 2014</span>
-                        <h3 class="timeline-title">商業策劃總監</h3>
-                        <p class="timeline-company">Business Planning Director</p>
+                        <h3 class="timeline-title">Business Planning Director</h3>
+                        <p class="timeline-company">Strategic Consultancy</p>
                         <p class="timeline-desc">
-                            提供一站式商業策劃與市場服務，為海外公司進入中國市場，以及中國公司拓展國際市場提供解決方案。
+                            Delivered one-stop business planning and market services for overseas companies entering China, and Chinese companies expanding internationally.
                         </p>
                     </div>
                 </div>
@@ -1128,10 +1123,10 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content reveal">
                         <span class="timeline-year">Pre-2003</span>
-                        <h3 class="timeline-title">高級行政主管</h3>
-                        <p class="timeline-company">Senior Executive</p>
+                        <h3 class="timeline-title">Senior Executive</h3>
+                        <p class="timeline-company">Hong Kong Exchanges · HKUST · Ming Pao Media</p>
                         <p class="timeline-desc">
-                            曾任香港交易所國際事務部高級行政主管、香港科技大學特別項目總監、明報媒體集團特別業務發展總監等職，擁有豐富的上市公司與國際機構管理經驗。
+                            Senior Executive in International Affairs at Hong Kong Exchanges and Clearing (HKEX), Director of Special Projects at HKUST, and Special Business Development Director at Ming Pao Media Group.
                         </p>
                     </div>
                 </div>
@@ -1144,60 +1139,53 @@
     <section class="expertise" id="expertise">
         <div class="section-container">
             <span class="section-label">What I Do</span>
-            <h2 class="section-title">Expertise &nbsp;·&nbsp; 專業領域</h2>
+            <h2 class="section-title">Expertise</h2>
             <div class="section-rule"></div>
             <p class="section-subtitle">Six pillars of cross-border excellence</p>
 
             <div class="expertise-grid">
-
                 <div class="expertise-card reveal">
                     <div class="expertise-icon-wrap">
-                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     </div>
-                    <h3>跨國市場戰略</h3>
-                    <p>Cross-border Market Strategy</p>
+                    <h3>Cross-border Market Strategy</h3>
+                    <p>Navigating international markets with precision and cultural intelligence</p>
                 </div>
-
                 <div class="expertise-card reveal">
                     <div class="expertise-icon-wrap">
-                        <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                    <h3>出海顧問服務</h3>
-                    <p>Go-global Consultancy</p>
+                    <h3>Go-global Consultancy</h3>
+                    <p>Full-spectrum advisory for enterprises expanding beyond borders</p>
                 </div>
-
                 <div class="expertise-card reveal">
                     <div class="expertise-icon-wrap">
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                     </div>
-                    <h3>品牌全球化</h3>
-                    <p>Brand Globalisation</p>
+                    <h3>Brand Globalisation</h3>
+                    <p>Positioning brands for resonance across diverse cultural landscapes</p>
                 </div>
-
                 <div class="expertise-card reveal">
                     <div class="expertise-icon-wrap">
                         <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
-                    <h3>跨界合作</h3>
-                    <p>Cross-industry Collaboration</p>
+                    <h3>Cross-industry Collaboration</h3>
+                    <p>Building bridges between industries, cultures, and institutions</p>
                 </div>
-
                 <div class="expertise-card reveal">
                     <div class="expertise-icon-wrap">
                         <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
-                    <h3>國際項目規劃</h3>
-                    <p>International Project Planning</p>
+                    <h3>International Project Planning</h3>
+                    <p>Structuring complex multi-market projects from concept to execution</p>
                 </div>
-
                 <div class="expertise-card reveal">
                     <div class="expertise-icon-wrap">
                         <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     </div>
-                    <h3>政府機構對接</h3>
-                    <p>Government &amp; Institution Engagement</p>
+                    <h3>Government &amp; Institution Engagement</h3>
+                    <p>Strategic alignment between private enterprise and public institutions</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -1206,25 +1194,25 @@
     <section class="languages" id="languages">
         <div class="section-container">
             <span class="section-label">Communication</span>
-            <h2 class="section-title">Languages &nbsp;·&nbsp; 語言能力</h2>
+            <h2 class="section-title">Languages</h2>
             <div class="section-rule"></div>
             <p class="section-subtitle">Fluent across three languages and cultures</p>
 
             <div class="language-cards">
                 <div class="language-card reveal">
+                    <span class="lang-flag">🇬🇧</span>
+                    <h3>English</h3>
+                    <p>Fluent</p>
+                </div>
+                <div class="language-card reveal">
                     <span class="lang-flag">🇨🇳</span>
-                    <h3>普通話</h3>
-                    <p>Mandarin</p>
+                    <h3>Mandarin</h3>
+                    <p>Native</p>
                 </div>
                 <div class="language-card reveal">
                     <span class="lang-flag">🇭🇰</span>
-                    <h3>粵語</h3>
-                    <p>Cantonese</p>
-                </div>
-                <div class="language-card reveal">
-                    <span class="lang-flag">🇬🇧</span>
-                    <h3>英語</h3>
-                    <p>English</p>
+                    <h3>Cantonese</h3>
+                    <p>Native</p>
                 </div>
             </div>
         </div>
@@ -1235,50 +1223,51 @@
         <div class="section-container">
             <div class="contact-inner">
                 <span class="section-label">Let's Connect</span>
-                <h2 class="section-title">Get in Touch &nbsp;·&nbsp; 聯繫方式</h2>
+                <h2 class="section-title">Get in Touch</h2>
                 <div class="section-rule"></div>
-
                 <p class="contact-intro">
-                    歡迎聯繫合作機會或咨詢<br>
                     Every great collaboration begins with a conversation.<br>
                     Feel free to reach out for partnerships, speaking engagements, or strategic inquiries.
                 </p>
 
                 <div class="contact-links">
-
                     <a href="mailto:venuslean@qq.com" class="contact-link cl-email">
                         <span class="cl-icon">
                             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </span>
                         venuslean@qq.com
                     </a>
-
                     <a href="https://cn.linkedin.com/in/venus-lean-88360416" target="_blank" rel="noopener" class="contact-link cl-linkedin">
                         <span class="cl-icon">
                             <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                         </span>
                         LinkedIn Profile
                     </a>
-
                     <a href="https://www.instagram.com/abia.network/" target="_blank" rel="noopener" class="contact-link cl-instagram">
                         <span class="cl-icon">
                             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </span>
                         ABIA Instagram
                     </a>
-
-                    <a href="https://www.facebook.com/profile.php?id=61582437116644" target="_blank" rel="noopener" class="contact-link cl-wechat">
+                    <a href="https://www.facebook.com/profile.php?id=61582437116644" target="_blank" rel="noopener" class="contact-link cl-facebook">
                         <span class="cl-icon">
                             <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </span>
                         ABIA Facebook
                     </a>
-
                 </div>
 
-                <p style="font-size:0.8rem;color:var(--text-light);letter-spacing:0.06em;">
-                    亞太商業創新聯盟 &nbsp;·&nbsp;
-                    <a href="https://www.instagram.com/abia.network/" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Asia-Pacific Business Innovation Association (ABIA)</a>
+                <!-- WeChat -->
+                <div class="wechat-id-box reveal">
+                    <span class="cl-icon" style="background:#dcfce7; border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center;">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </span>
+                    <span class="wechat-label">WeChat ID</span>
+                    <span class="wechat-value">VenusLean</span>
+                </div>
+
+                <p class="contact-note" style="margin-top:40px;">
+                    Representing the <a href="https://www.instagram.com/abia.network/" target="_blank" rel="noopener">Asia-Pacific Business Innovation Association (ABIA)</a>
                 </p>
             </div>
         </div>
@@ -1293,47 +1282,19 @@
             <li><a href="#expertise">Expertise</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="https://cn.linkedin.com/in/venus-lean-88360416" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="zh.html" hreflang="zh">中文版</a></li>
         </ul>
-        <p>© 2025 Venus Lean &nbsp;·&nbsp; 練瑞雲. All Rights Reserved.</p>
+        <p>&copy; 2025 Venus Lean · legendv.me &nbsp;·&nbsp; All rights reserved</p>
     </footer>
 
     <script>
-        // Mobile menu
         function toggleMenu() {
             document.getElementById('navLinks').classList.toggle('open');
         }
-
-        // Close menu on link click
         document.querySelectorAll('.nav-links a').forEach(a => {
             a.addEventListener('click', () => {
                 document.getElementById('navLinks').classList.remove('open');
             });
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-        // Scroll reveal
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    revealObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-        document.querySelectorAll('.reveal').forEach((el, i) => {
-            el.style.transitionDelay = (i % 3) * 0.1 + 's';
-            revealObserver.observe(el);
         });
 
         // Navbar shrink on scroll
@@ -1343,10 +1304,20 @@
                 nav.style.padding = '0';
                 nav.querySelector('.nav-container').style.padding = '10px 32px';
             } else {
-                nav.style.padding = '0';
-                nav.querySelector('.nav-container').style.padding = '16px 32px';
+                nav.querySelector('.nav-container').style.padding = '14px 32px';
             }
         });
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
