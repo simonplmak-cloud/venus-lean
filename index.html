@@ -214,6 +214,41 @@
         .nav-links a:hover { color: var(--rose-main); }
         .nav-links a:hover::after { width: 100%; }
 
+        /* ─── Mobile language toggle (always visible) ─── */
+        .lang-switch-mobile {
+            display: none;
+            align-items: center;
+            gap: 5px;
+            margin-right: 10px;
+        }
+        .lang-switch-mobile a {
+            font-family: 'Lato', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+        .lang-switch-mobile a.active {
+            background: var(--rose-main);
+            color: var(--white);
+        }
+        .lang-switch-mobile a:not(.active) {
+            color: var(--text-mid);
+            border: 1px solid var(--blush);
+        }
+        .lang-switch-mobile a:not(.active):hover {
+            background: var(--blush);
+            color: var(--rose-deep);
+        }
+        .lang-switch-mobile .lang-divider {
+            width: 1px; height: 12px;
+            background: var(--blush);
+        }
+
         .hamburger {
             display: none;
             flex-direction: column;
@@ -915,6 +950,7 @@
             .nav-links.open { display: flex; }
             .hamburger { display: flex; }
             .lang-switch { display: none; }
+            .lang-switch-mobile { display: flex; }
 
             section { padding: 70px 20px; }
             .hero { padding: 100px 20px 60px; }
@@ -962,6 +998,11 @@
                     <div class="lang-divider"></div>
                     <a href="zh.html" hreflang="zh">中文</a>
                 </div>
+            </div>
+            <div class="lang-switch-mobile" aria-label="Language switcher">
+                <a href="index.html" class="active" hreflang="en">EN</a>
+                <div class="lang-divider"></div>
+                <a href="zh.html" hreflang="zh">中文</a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
                 <span></span><span></span><span></span>
