@@ -38,7 +38,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <meta name="theme-color" content="#7b3f52">
+    <meta name="theme-color" content="#2d7a4f">
 
     <!-- ─── Alternate Language ─── -->
     <link rel="alternate" hreflang="en" href="https://legendv.me/">
@@ -77,22 +77,22 @@
 
     <style>
         :root {
-            --rose-deep:    #7b3f52;
-            --rose-main:    #a05070;
-            --rose-soft:    #c9859a;
-            --blush:        #f0d4dc;
-            --blush-light:  #faf0f3;
-            --cream:        #fdf8f5;
-            --ivory:        #fffdf9;
-            --gold:         #b8924a;
-            --gold-light:   #d4af6e;
-            --gold-pale:    #f0e0c0;
-            --mauve:        #6b4c5e;
-            --text-dark:    #3a2a30;
-            --text-mid:     #6b5560;
-            --text-light:   #9a8090;
+            --rose-deep:    #1a4a2e;   /* deep forest green */
+            --rose-main:    #2d7a4f;   /* emerald green */
+            --rose-soft:    #5aab7a;   /* sage green */
+            --blush:        #d4ead9;   /* pale green tint */
+            --blush-light:  #f0f8f2;   /* near-white green */
+            --cream:        #f5faf6;   /* ivory green */
+            --ivory:        #fafcfa;   /* soft white-green */
+            --gold:         #b8924a;   /* gold (unchanged) */
+            --gold-light:   #d4af6e;   /* light gold */
+            --gold-pale:    #f0e8d0;   /* pale gold */
+            --mauve:        #2a5c3f;   /* dark green */
+            --text-dark:    #1c3028;   /* dark green-black */
+            --text-mid:     #3d6b52;   /* mid green */
+            --text-light:   #6b9e80;   /* light green-grey */
             --white:        #ffffff;
-            --shadow-rose:  rgba(160, 80, 112, 0.15);
+            --shadow-rose:  rgba(45, 122, 79, 0.15);
             --shadow-gold:  rgba(184, 146, 74, 0.20);
         }
 
@@ -211,13 +211,13 @@
         }
         .hero-bg {
             position: absolute; inset: 0;
-            background-image: url('images/hero-banner.jpg');
+            background-image: url('images/hero-banner-green.jpg');
             background-size: cover; background-position: center top;
             opacity: 0.35; z-index: 0;
         }
         .hero-overlay {
             position: absolute; inset: 0;
-            background: linear-gradient(135deg, rgba(253,248,245,0.82) 0%, rgba(240,212,220,0.55) 50%, rgba(253,248,245,0.70) 100%);
+            background: linear-gradient(135deg, rgba(245,250,246,0.85) 0%, rgba(212,234,217,0.55) 50%, rgba(245,250,246,0.75) 100%);
             z-index: 1;
         }
         .hero-content {
@@ -309,8 +309,8 @@
 
         /* Quote */
         .quote-section { padding: 90px 32px; position: relative; overflow: hidden; }
-        .quote-bg { position: absolute; inset: 0; background-image: url('images/quote-bg.jpg'); background-size: cover; background-position: center; opacity: 0.55; }
-        .quote-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(123,63,82,0.82) 0%, rgba(107,76,94,0.78) 100%); }
+        .quote-bg { position: absolute; inset: 0; background-image: url('images/quote-bg-green.jpg'); background-size: cover; background-position: center; opacity: 0.55; }
+        .quote-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,74,46,0.85) 0%, rgba(45,122,79,0.80) 100%); }
         .quote-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; text-align: center; }
         .quote-mark { font-family: 'Great Vibes', cursive; font-size: 6rem; color: var(--gold-light); line-height: 0.5; display: block; margin-bottom: 24px; opacity: 0.7; }
         .quote-text { font-family: 'Noto Serif TC', serif; font-size: clamp(1.1rem, 2.5vw, 1.6rem); font-weight: 300; color: var(--white); line-height: 2; margin-bottom: 28px; }
@@ -385,8 +385,16 @@
         .contact-note a { color: var(--rose-soft); text-decoration: none; }
         .contact-note a:hover { color: var(--rose-main); }
 
+        /* SDG Supporter Badge */
+        .sdg-badge-section { background: var(--ivory); padding: 48px 32px; text-align: center; border-top: 1px solid var(--blush); }
+        .sdg-badge-inner { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        .sdg-badge-label { font-family: 'Lato', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-light); }
+        .sdg-badge-logo { max-width: 260px; width: 100%; height: auto; opacity: 0.92; transition: opacity 0.3s; }
+        .sdg-badge-logo:hover { opacity: 1; }
+        .sdg-disclaimer { font-size: 0.72rem; color: var(--text-light); font-style: italic; max-width: 560px; line-height: 1.7; }
+
         /* Footer */
-        footer { background: var(--rose-deep); color: rgba(255,255,255,0.75); padding: 40px 32px; text-align: center; }
+        footer { background: #1a4a2e; color: rgba(255,255,255,0.80); padding: 40px 32px; text-align: center; }
         .footer-logo { font-family: 'Great Vibes', cursive; font-size: 2.2rem; color: var(--gold-light); display: block; margin-bottom: 12px; }
         .footer-links { display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; list-style: none; margin-bottom: 20px; }
         .footer-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.3s; }
@@ -503,7 +511,7 @@
 
     <!-- 花卉分隔線 -->
     <div style="background:var(--ivory); padding:0; line-height:0; overflow:hidden;">
-        <img src="images/floral-divider.png" alt="" aria-hidden="true" class="floral-divider" loading="lazy">
+        <img src="images/floral-divider-green.png" alt="" aria-hidden="true" class="floral-divider" loading="lazy">
     </div>
 
     <!-- 關於我 -->
@@ -769,6 +777,17 @@
             </div>
         </div>
     </section>
+
+    <!-- SDG 可持續發展目標徽章 -->
+    <div class="sdg-badge-section">
+        <div class="sdg-badge-inner reveal">
+            <span class="sdg-badge-label">致力建設更美好的世界</span>
+            <a href="https://sdgs.un.org/" target="_blank" rel="noopener" title="聯合國可持續發展目標">
+                <img class="sdg-badge-logo" src="images/sdg-logo.png" alt="聯合國可持續發展目標 — 官方支持者" loading="lazy">
+            </a>
+            <p class="sdg-disclaimer">練瑞雲及亞太商業創新聯盟（ABIA）致力推動聯合國可持續發展目標，尤其專注於目標8（體面工作和經濟增長）、目標10（減少不平等）及目標17（促進目標實現的夥伴關係）。</p>
+        </div>
+    </div>
 
     <!-- 頁腳 -->
     <footer>
