@@ -178,6 +178,14 @@
     .partners-title{font-family:var(--font-d);font-size:2rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);margin-bottom:10px}
     .partners-sub{font-size:.85rem;color:var(--grey-light);margin-bottom:48px;max-width:680px;line-height:1.7}
     .partners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+    .partner-featured{grid-column:1/-1;background:var(--dark);border:1px solid var(--gold-dark);padding:36px 40px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;position:relative;overflow:hidden;margin-bottom:8px}
+    .partner-featured::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--forest))}
+    .partner-featured .partner-logo{height:70px;margin-bottom:0}
+    .partner-featured .partner-name{font-size:1.2rem}
+    .partner-sub-label{font-size:.6rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--grey);margin:20px 0 16px;grid-column:1/-1;display:flex;align-items:center;gap:14px}
+    .partner-sub-label::after{content:'';flex:1;height:1px;background:var(--forest)}
+    .partner-via{font-size:.65rem;color:var(--grey);margin-top:6px;font-style:italic}
+    @media(max-width:768px){.partner-featured{grid-template-columns:1fr;gap:20px}}
     .partner-card{background:var(--dark);border:1px solid var(--forest);padding:32px 24px;transition:border-color var(--tr),transform var(--tr);position:relative;overflow:hidden}
     .partner-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--forest));transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
     .partner-card:hover{border-color:var(--gold-dark);transform:translateY(-4px)}
@@ -397,20 +405,27 @@
   <div class="partners-inner">
     <div class="partners-eye reveal">合作夥伴</div>
     <div class="partners-title reveal">攜手全球領袖</div>
-    <p class="partners-sub reveal">練瑞雲及ABIA與多個傑出國際組織及基金會緊密合作，共同推動可持續發展、跨境合作及亞太地區的包容性經濟增長。</p>
+    <p class="partners-sub reveal">練瑞雲與 <strong style="color:var(--gold)">Ascent Partners Foundation</strong>（香港第88條註冊慈善機構）緊密合作，而該基金會則與UNESCAP、IOM及IUCN等國際機構建立正式夥伴關係。</p>
     <div class="partners-grid">
 
-      <div class="partner-card reveal">
+      <!-- Ascent Partners Foundation — 直接合作夥伴 -->
+      <div class="partner-featured reveal">
         <div class="partner-logo">
           <img src="images/logo-ascent.png" alt="Ascent Partners Foundation" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
           <span class="partner-logo-text" style="display:none">APF</span>
         </div>
-        <span class="partner-badge">第88條慈善機構 · 香港</span>
-        <div class="partner-name">Ascent Partners Foundation</div>
-        <p class="partner-desc">香港註冊慈善機構，致力促進跨界別合作，應對亞太區環境及社會挑戰。聚焦氣候行動、ESG整合及生物多樣性保護。</p>
-        <a href="https://www.ascent.partners" target="_blank" rel="noopener" class="partner-link">瀏覽網站 →</a>
+        <div>
+          <span class="partner-badge">第88條慈善機構 · 香港 · 直接合作夥伴</span>
+          <div class="partner-name">Ascent Partners Foundation</div>
+          <p class="partner-desc">香港註冊慈善機構（第88條），致力促進跨界別合作，應對亞太區環境及社會挑戰。該基金會將慈善社群與國際機構連結，聚焦氣候行動、ESG整合及生物多樣性保護，並與UNESCAP、IOM及IUCN建立正式夥伴關係。</p>
+          <a href="https://www.ascent.partners" target="_blank" rel="noopener" class="partner-link">瀏覽網站 →</a>
+        </div>
       </div>
 
+      <!-- 小標題 -->
+      <div class="partner-sub-label reveal">Ascent Partners Foundation 的國際合作機構</div>
+
+      <!-- UNESCAP -->
       <div class="partner-card reveal">
         <div class="partner-logo">
           <img src="images/logo-unescap.png" alt="UNESCAP" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
@@ -419,9 +434,11 @@
         <span class="partner-badge">聯合國 · 亞太區</span>
         <div class="partner-name">聯合國亞太經社會</div>
         <p class="partner-desc">聯合國亞洲及太平洋經濟社會委員會，是推動亞太地區經濟社會發展、落實2030議程的區域核心機構，成員涵蓋53個國家。</p>
+        <p class="partner-via">Ascent Partners Foundation 合作機構</p>
         <a href="https://www.unescap.org" target="_blank" rel="noopener" class="partner-link">瀏覽網站 →</a>
       </div>
 
+      <!-- IOM -->
       <div class="partner-card reveal">
         <div class="partner-logo">
           <img src="images/logo-iom.svg" alt="IOM" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
@@ -430,9 +447,11 @@
         <span class="partner-badge">聯合國移民署</span>
         <div class="partner-name">國際移民組織</div>
         <p class="partner-desc">國際移民組織是全球首要的移民事務政府間組織，致力於有序、人道的移民管理，業務遍及175個國家。</p>
+        <p class="partner-via">Ascent Partners Foundation 合作機構</p>
         <a href="https://www.iom.int" target="_blank" rel="noopener" class="partner-link">瀏覽網站 →</a>
       </div>
 
+      <!-- IUCN -->
       <div class="partner-card reveal">
         <div class="partner-logo">
           <img src="images/logo-iucn.svg" alt="IUCN" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
@@ -440,7 +459,8 @@
         </div>
         <span class="partner-badge">自然保護 · 全球</span>
         <div class="partner-name">國際自然保護聯盟</div>
-        <p class="partner-desc">國際自然保護聯盟是全球自然界狀況的權威機構，透過IUCN夥伴關係，將保育倡議與亞太區慈善社群緊密相連。</p>
+        <p class="partner-desc">國際自然保護聯盟是全球自然界狀況的權威機構，將保育倡議與亞太區慈善社群緊密相連。</p>
+        <p class="partner-via">Ascent Partners Foundation 合作機構</p>
         <a href="https://www.iucn.org" target="_blank" rel="noopener" class="partner-link">瀏覽網站 →</a>
       </div>
 

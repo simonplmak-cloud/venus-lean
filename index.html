@@ -357,6 +357,14 @@
     .partners-title { font-family: var(--font-d); font-size: 2rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--white); margin-bottom: 10px; }
     .partners-sub { font-size: 0.85rem; color: var(--grey-light); margin-bottom: 48px; max-width: 680px; line-height: 1.7; }
     .partners-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .partner-featured { grid-column: 1 / -1; background: var(--dark); border: 1px solid var(--gold-dark); padding: 36px 40px; display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; position: relative; overflow: hidden; margin-bottom: 8px; }
+    .partner-featured::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--forest)); }
+    .partner-featured .partner-logo { height: 70px; margin-bottom: 0; }
+    .partner-featured .partner-name { font-size: 1.2rem; }
+    .partner-sub-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--grey); margin: 20px 0 16px; grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; }
+    .partner-sub-label::after { content: ''; flex: 1; height: 1px; background: var(--forest); }
+    .partner-via { font-size: 0.65rem; color: var(--grey); margin-top: 6px; font-style: italic; }
+    @media (max-width: 768px) { .partner-featured { grid-template-columns: 1fr; gap: 20px; } }
     .partner-card { background: var(--dark); border: 1px solid var(--forest); padding: 32px 24px; transition: border-color var(--tr), transform var(--tr); position: relative; overflow: hidden; }
     .partner-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--forest)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
     .partner-card:hover { border-color: var(--gold-dark); transform: translateY(-4px); }
@@ -709,20 +717,25 @@
   <div class="partners-inner">
     <div class="partners-eye reveal">Affiliations &amp; Partnerships</div>
     <div class="partners-title reveal">Working With Global Leaders</div>
-    <p class="partners-sub reveal">Venus Lean and ABIA collaborate with distinguished international organisations and foundations to advance sustainable development, cross-border cooperation, and inclusive economic growth across the Asia-Pacific and beyond.</p>
+    <p class="partners-sub reveal">Venus Lean works with <strong style="color:var(--gold)">Ascent Partners Foundation</strong>, a Hong Kong Section 88 registered charity — which in turn holds active partnerships with leading international organisations including UNESCAP, IOM, and IUCN.</p>
     <div class="partners-grid">
 
-      <!-- Ascent Partners Foundation -->
-      <div class="partner-card reveal">
+      <!-- Ascent Partners Foundation — featured primary partner -->
+      <div class="partner-featured reveal">
         <div class="partner-logo">
           <img src="images/logo-ascent.png" alt="Ascent Partners Foundation" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
           <span class="partner-logo-text" style="display:none">APF</span>
         </div>
-        <span class="partner-badge">Section 88 Charity · Hong Kong</span>
-        <div class="partner-name">Ascent Partners Foundation</div>
-        <p class="partner-desc">A Hong Kong registered charity fostering cross-sector collaboration to address environmental and social challenges across the Asia-Pacific. Focuses on Climate Action, ESG Integration, and Biodiversity through IUCN partnership.</p>
-        <a href="https://www.ascent.partners" target="_blank" rel="noopener" class="partner-link">Visit Website →</a>
+        <div>
+          <span class="partner-badge">Section 88 Charity · Hong Kong · Direct Partner</span>
+          <div class="partner-name">Ascent Partners Foundation</div>
+          <p class="partner-desc">A Hong Kong registered charity (Section 88) fostering cross-sector collaboration to address environmental and social challenges across the Asia-Pacific. Ascent Partners Foundation bridges philanthropic communities with global institutions, focusing on Climate Action, ESG Integration, and Biodiversity — and holds active partnerships with UNESCAP, IOM, and IUCN.</p>
+          <a href="https://www.ascent.partners" target="_blank" rel="noopener" class="partner-link">Visit Website →</a>
+        </div>
       </div>
+
+      <!-- Sub-label -->
+      <div class="partner-sub-label reveal">International Organisations — Partners of Ascent Partners Foundation</div>
 
       <!-- UNESCAP -->
       <div class="partner-card reveal">
@@ -732,7 +745,8 @@
         </div>
         <span class="partner-badge">United Nations · Asia-Pacific</span>
         <div class="partner-name">UN ESCAP</div>
-        <p class="partner-desc">The United Nations Economic and Social Commission for Asia and the Pacific — the regional hub for promoting economic and social development, and advancing the 2030 Agenda across 53 member states.</p>
+        <p class="partner-desc">The United Nations Economic and Social Commission for Asia and the Pacific — the regional hub for promoting economic and social development and advancing the 2030 Agenda across 53 member states.</p>
+        <p class="partner-via">Partner of Ascent Partners Foundation</p>
         <a href="https://www.unescap.org" target="_blank" rel="noopener" class="partner-link">Visit Website →</a>
       </div>
 
@@ -744,7 +758,8 @@
         </div>
         <span class="partner-badge">UN Migration Agency</span>
         <div class="partner-name">IOM — UN Migration</div>
-        <p class="partner-desc">The International Organization for Migration — the leading inter-governmental organisation committed to the principle that humane and orderly migration benefits migrants and society, operating in 175 countries.</p>
+        <p class="partner-desc">The International Organization for Migration — the leading inter-governmental organisation committed to humane and orderly migration, operating in 175 countries worldwide.</p>
+        <p class="partner-via">Partner of Ascent Partners Foundation</p>
         <a href="https://www.iom.int" target="_blank" rel="noopener" class="partner-link">Visit Website →</a>
       </div>
 
@@ -757,6 +772,7 @@
         <span class="partner-badge">Conservation · Global</span>
         <div class="partner-name">IUCN</div>
         <p class="partner-desc">The International Union for Conservation of Nature — the global authority on the status of the natural world, connecting conservation initiatives with philanthropic communities across the Asia-Pacific.</p>
+        <p class="partner-via">Partner of Ascent Partners Foundation</p>
         <a href="https://www.iucn.org" target="_blank" rel="noopener" class="partner-link">Visit Website →</a>
       </div>
 
